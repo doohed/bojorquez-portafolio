@@ -1,6 +1,9 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  background-color: #dbdbcc;
+  color: #080807;
+  background-image: url('/public/noise.png');
 }
 
 @keyframes titleIn {

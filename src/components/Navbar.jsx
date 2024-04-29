@@ -24,16 +24,7 @@ const Navbar = () => {
   return (
     <Container className="absolute">
       <List className="inline">
-        <Link>
-          <Item>
-            <div className="hover:translate-y-[-25px] ease-in-out duration-200">
-              <span className="text-left">Home</span>
-              <br />
-              <span className="text-left">Home</span>
-            </div>
-          </Item>
-        </Link>
-        <Link>
+        <Link href="#about">
           <Item>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">About</span>
@@ -42,7 +33,7 @@ const Navbar = () => {
             </div>
           </Item>
         </Link>
-        <Link>
+        <Link href="#work">
           <Item>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">Works</span>
@@ -51,7 +42,7 @@ const Navbar = () => {
             </div>
           </Item>
         </Link>
-        <Link>
+        <Link href="#contact">
           <Item>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">Contact</span>

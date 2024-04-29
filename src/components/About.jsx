@@ -3,11 +3,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const Section = styled.div``;
+const Section = styled.div`
+
+`;
 
 const Container = styled.div`
   overflow: hidden;
-  color: white;
+  color: #BFBFB1;
 `;
 
 const About = () => {
@@ -18,12 +20,12 @@ const About = () => {
   return (
     <Section>
       <Container>
-        <div data-aos="fade" data-aos-anchor-placement="top-center" className=" mt-[20vh] bg-black">
+        <div id="about" data-aos="fade" data-aos-anchor-placement="top-center" className=" mt-[20vh] bg-black bg-[url('/public/noise.png')]">
           <div className="w-[90vw] ml-[4vw]">
             <div className="border-b-2 border-gray-700">
               <h1
                 data-aos="fade-right"
-                className="text-9xl text-left m-0 mb-[70px] font-['Open_Sans']"
+                className="text-9xl text-left m-0 mb-[90px] font-['Open_Sans']"
               >
                 /ABOUT
               </h1>

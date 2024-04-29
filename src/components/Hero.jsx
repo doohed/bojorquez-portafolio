@@ -4,12 +4,22 @@ const Section = styled.div``;
 
 const Container = styled.div`
   overflow: hidden;
+  
 `;
 
 const Title = styled.div`
   font-family: "Metropolis";
   font-size: 10vw;
-  -webkit-text-stroke: 0.1vw black;
+  -webkit-text-stroke: 0.1vw #080807;
+  user-select: none;
+  letter-spacing: -1vw;
+  width: 100vw;
+`;
+
+const Title2 = styled.div`
+  font-family: "Metropolis";
+  font-size: 10vw;
+  -webkit-text-stroke: 0.1vw #dbdbcc;
   user-select: none;
   letter-spacing: -1vw;
   width: 100vw;
@@ -31,9 +41,11 @@ const Message = styled.div`
 const Square = styled.div`
   height: 41vw;
   width: 35vw;
-  background-color: black;
+  background-color: #080807;
   z-index: 1;
   overflow: hidden;
+  background-image: url('/public/noise.png');
+  background-position: center;
 `;
 
 const Hero = () => {
@@ -55,15 +67,15 @@ const Hero = () => {
           top-[50%] 
           translate-y-[-50%]"
             >
-              <Title className="invert animate-[titleIn_.7s_ease-in-out]">
+              <Title2 className=" text-[#dbdbcc] animate-[titleIn_.7s_ease-in-out]">
                 MARTIN BOJORQUEZ
-              </Title>
-              <Title className="invert text-white animate-[titleIn_1s_ease-in-out]">
+              </Title2>
+              <Title2 className=" text-[#080807] animate-[titleIn_1s_ease-in-out]">
                 MARTIN BOJORQUEZ
-              </Title>
-              <Title className="invert animate-[titleIn_1.5s_ease-in-out]">
+              </Title2>
+              <Title2 className="text-[#dbdbcc] animate-[titleIn_1.5s_ease-in-out]">
                 MARTIN BOJORQUEZ
-              </Title>
+              </Title2>
             </div>
           </Square>
           <div
@@ -76,7 +88,7 @@ const Hero = () => {
             <Title className=" animate-[titleIn_.7s_ease-in-out]">
               MARTIN BOJORQUEZ
             </Title>
-            <Title className="text-white animate-[titleIn_1s_ease-in-out]">
+            <Title className="text-[#dbdbcc] animate-[titleIn_1s_ease-in-out]">
               MARTIN BOJORQUEZ
             </Title>
             <Title className=" animate-[titleIn_1.5s_ease-in-out]">
