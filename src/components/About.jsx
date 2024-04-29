@@ -23,7 +23,7 @@ const About = () => {
             <div className="border-b-2 border-gray-700">
               <h1
                 data-aos="fade-right"
-                className="text-9xl text-left m-5 mb-[70px] font-['Open_Sans']"
+                className="text-9xl text-left m-0 mb-[70px] font-['Open_Sans']"
               >
                 /ABOUT
               </h1>

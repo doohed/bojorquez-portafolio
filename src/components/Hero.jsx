@@ -58,7 +58,7 @@ const Hero = () => {
               <Title className="invert animate-[titleIn_.7s_ease-in-out]">
                 MARTIN BOJORQUEZ
               </Title>
-              <Title className="invert animate-[titleIn_1s_ease-in-out]">
+              <Title className="invert text-white animate-[titleIn_1s_ease-in-out]">
                 MARTIN BOJORQUEZ
               </Title>
               <Title className="invert animate-[titleIn_1.5s_ease-in-out]">
