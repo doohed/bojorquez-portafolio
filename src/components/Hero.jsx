@@ -22,7 +22,10 @@ const Top = styled.div`
 
 const Message = styled.div`
   user-select: none;
-  bottom: 0vh;
+  bottom: 0px;
+  @media (max-width: 1060px) {
+    bottom: 48px;
+  }
 `;
 
 const Square = styled.div`
@@ -91,7 +94,7 @@ const Hero = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-20 h-20 animate-bounce"
+              className="w-14 h-14 animate-bounce"
             >
               <path
                 strokeLinecap="round"
