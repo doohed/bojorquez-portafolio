@@ -24,7 +24,7 @@ const Message = styled.div`
   user-select: none;
   bottom: 0px;
   @media (max-width: 1060px) {
-    bottom: 48px;
+    bottom: 80px;
   }
 `;
 
