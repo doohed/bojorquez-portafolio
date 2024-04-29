@@ -44,7 +44,7 @@ const Square = styled.div`
   background-color: #080807;
   z-index: 1;
   overflow: hidden;
-  background-image: url('/public/noise.png');
+  background-image: url('/noise.png');
   background-position: center;
 `;
 

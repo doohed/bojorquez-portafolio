@@ -9,7 +9,7 @@ const Container = styled.div`
   overflow: hidden;
   color: #bfbfb1;
   background-color: black;
-  background-image: url('/public/noise.png');
+  background-image: url('/noise.png');
 `;
 
 const Card = styled.div`

@@ -3,7 +3,7 @@
   text-align: center;
   background-color: #dbdbcc;
   color: #080807;
-  background-image: url('/public/noise.png');
+  background-image: url('/noise.png');
 }
 
 @keyframes titleIn {

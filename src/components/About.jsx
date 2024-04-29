@@ -20,7 +20,7 @@ const About = () => {
   return (
     <Section>
       <Container>
-        <div id="about" data-aos="fade" data-aos-anchor-placement="top-center" className=" mt-[20vh] bg-black bg-[url('/public/noise.png')]">
+        <div id="about" data-aos="fade" data-aos-anchor-placement="top-center" className=" mt-[20vh] bg-black bg-[url('/noise.png')]">
           <div className="w-[90vw] ml-[4vw]">
             <div className="border-b-2 border-gray-700">
               <h1
