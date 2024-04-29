@@ -14,17 +14,16 @@ const Container = styled.div`
 
 const Card = styled.div`
   width: 60vw;
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 40rem; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 40rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (max-width: 1200px) {
     height: 30rem;
   }
   @media (max-width: 960px) {
     height: 20rem;
-    width: auto;
+    width: 102%;
   }
 `;
 
