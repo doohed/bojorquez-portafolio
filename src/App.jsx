@@ -1,19 +1,16 @@
-
-import './App.css'
-import About from './components/About'
-import Hero from './components/Hero'
-
-
+import "./App.css";
+import About from "./components/About";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 function App() {
-  
-
   return (
-    <>
-    <Hero/>
-    <About/>
-    </>
-  )
+    <div>
+      <Navbar/>
+      <Hero />
+      <About />
+    </div>
+  );
 }
 
-export default App
+export default App;
