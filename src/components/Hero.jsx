@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-const Section = styled.div`
-`;
+const Section = styled.div``;
 
 const Container = styled.div`
   overflow: hidden;
@@ -22,10 +21,8 @@ const Top = styled.div`
 `;
 
 const Message = styled.div`
-  width: 100vw;
   user-select: none;
-  bottom: 4.5vh;
-  font-size: large;
+  bottom: 0vh;
 `;
 
 const Square = styled.div`
@@ -88,7 +85,20 @@ const Hero = () => {
           translate-x-[-50%]
           "
           >
-            <p className="animate-bounce"> SCROLL DOWN</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-20 h-20 animate-bounce"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+              />
+            </svg>
           </Message>
         </Top>
       </Container>
