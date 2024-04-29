@@ -96,7 +96,7 @@ const Works = () => {
               className="bg-[url('https://images.unsplash.com/photo-1630389715052-983a8e31faa6?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
             >
               <video
-                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[60vw] max-[700px]:w-[80vw]"
+                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[50vw] max-[700px]:w-[70vw]"
                 autoPlay
                 muted
                 loop
@@ -129,7 +129,7 @@ const Works = () => {
               className="bg-[url('https://images.unsplash.com/photo-1614617021766-d00d5d28b1ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
             >
               <video
-                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[60vw] max-[700px]:w-[80vw]"
+                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[50vw] max-[700px]:w-[70vw]"
                 autoPlay
                 muted
                 loop

@@ -65,7 +65,7 @@ const Contact = () => {
         </h1>
         <div className="w-[80px]">
           <List className="inline">
-            <Link data-aos="fade-right" href="">
+            <Link data-aos="fade-right" href="https://github.com/doohed/" target="_blank">
               <Item>
                 <div className="hover:translate-y-[-25px] ease-in-out duration-200">
                   <span className="text-left">Github</span>
@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
               </Item>
             </Link>
-            <Link data-aos="fade-right" href="">
+            <Link data-aos="fade-right" href="https://www.linkedin.com/in/bojorquez-godina-martin-esteban-908609270/" target="_blank">
               <Item>
                 <div className="hover:translate-y-[-25px] ease-in-out duration-200">
                   <span className="text-left">Linkedin</span>
@@ -83,7 +83,7 @@ const Contact = () => {
                 </div>
               </Item>
             </Link>
-            <Link data-aos="fade-right" href="">
+            <Link data-aos="fade-right" href="https://www.instagram.com/dohed_/" target="_blank">
               <Item>
                 <div className="hover:translate-y-[-25px] ease-in-out duration-200">
                   <span className="text-left">Instagram</span>
