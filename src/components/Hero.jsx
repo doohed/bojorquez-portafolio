@@ -24,6 +24,7 @@ const Top = styled.div`
 const Message = styled.div`
   width: 100vw;
   user-select: none;
+  bottom: 1vw;
 `;
 
 const Square = styled.div`
@@ -83,8 +84,7 @@ const Hero = () => {
           </div>
           <Message
             className="absolute left-[50%] 
-          translate-x-[-50%] 
-          bottom-[0px]
+          translate-x-[-50%]
           "
           >
             <p className="animate-bounce"> SCROLL DOWN</p>
