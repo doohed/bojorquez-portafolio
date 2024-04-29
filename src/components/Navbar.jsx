@@ -60,6 +60,8 @@ const Options = styled.div`
   transform: translate(120%, 0%);
   @media (max-width: 960px) {
     width: 100vw;
+    height: 100vh;
+    top: 0px;
     right: 0px;
   }
 `;
@@ -162,7 +164,7 @@ const Navbar = () => {
         </svg>
       </Menu>
       <Options id="options" className="rounded ease-out duration-700">
-        <div className="text-left p-10 text-white w-[540px] text-[4vw] max-[960px]:text-[10vw]">
+        <div className="text-left p-10 text-white w-[240px] text-[4vw] max-[960px]:text-[10vw]">
           <div>
             <a href="#home" onClick={menu}>
               <Option>Home</Option>
