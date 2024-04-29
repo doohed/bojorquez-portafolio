@@ -24,11 +24,12 @@ const Top = styled.div`
 const Message = styled.div`
   width: 100vw;
   user-select: none;
-  bottom: 1vw;
+  bottom: 4.5vh;
+  font-size: large;
 `;
 
 const Square = styled.div`
-  height: 42vw;
+  height: 41vw;
   width: 35vw;
   background-color: black;
   z-index: 1;
