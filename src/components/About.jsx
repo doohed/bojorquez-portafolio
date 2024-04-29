@@ -18,12 +18,12 @@ const About = () => {
   }, []);
 
   return (
-    <Section>
-      <Container>
-        <div id="about" data-aos="fade" data-aos-anchor-placement="top-center" className=" mt-[20vh] bg-black bg-[url('/noise.png')]">
+    <Section >
+      <Container  data-aos="fade" data-aos-anchor-placement="top-center" className="bg-black bg-[url('/noise.png')]" >
+        <div id="about"   className=" mt-[20vh] bg-black bg-[url('/noise.png')]">
           <div className="w-[90vw] ml-[4vw]">
-            <div className="border-b-2 border-gray-700">
-              <h1
+            <div  className="border-b-2 border-gray-700">
+              <h1 
                 data-aos="fade-right"
                 className="text-9xl text-left m-0 mb-[90px] font-['Open_Sans'] max-[960px]:text-[20vw]"
               >

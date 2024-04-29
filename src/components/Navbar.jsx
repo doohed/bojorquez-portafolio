@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import zenScroll from "zenscroll";
 
 const Container = styled.div`
   z-index: 1;
@@ -40,11 +41,12 @@ const Menu = styled.div`
   width: 50px;
   background-color: #dbdbcc;
   transition: all 0.7s;
-  cursor: pointer;
   opacity: 0;
-  z-index: 3;
   background-image: url("/noise.png");
   background-position: center;
+  z-index: 3;
+  cursor: pointer;
+  transform: translate(0%, 0%);
 `;
 
 const Options = styled.div`
@@ -68,14 +70,20 @@ const Options = styled.div`
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const home = document.getElementById("home");
+  const about = document.getElementById("about");
+  const work = document.getElementById("work");
+  const contact = document.getElementById("contact");
 
   window.addEventListener("scroll", () => {
     const scrolled = window.scrollY;
 
-    if (scrolled > 1130) {
+    if (scrolled > 900) {
       document.getElementById("menu").style.opacity = "1";
       document.getElementById("menu").style.userSelect = "auto";
+      document.getElementById("menu").style.transform = "translate(0%)";
     } else {
+      document.getElementById("menu").style.transform = "translate(0%,-300%)";
       document.getElementById("menu").style.opacity = "0";
       document.getElementById("menu").style.userSelect = "none";
       document.querySelector("#x").style.opacity = "0";
@@ -107,7 +115,7 @@ const Navbar = () => {
   return (
     <Container className="absolute">
       <List className="inline">
-        <Link href="#about">
+        <Link href="#about" onClick={() => zenScroll.to(about)}>
           <Item>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">About</span>
@@ -116,7 +124,7 @@ const Navbar = () => {
             </div>
           </Item>
         </Link>
-        <Link href="#work">
+        <Link href="#work" onClick={() => zenScroll.to(work)}>
           <Item>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">Works</span>
@@ -125,7 +133,7 @@ const Navbar = () => {
             </div>
           </Item>
         </Link>
-        <Link href="#contact">
+        <Link onClick={() => zenScroll.toY(4550)}>
           <Item>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">Contact</span>
@@ -135,7 +143,7 @@ const Navbar = () => {
           </Item>
         </Link>
       </List>
-      <Menu id="menu" className=" rounded-full" onClick={menu}>
+      <Menu id="menu" className="hide rounded-full" onClick={menu}>
         <svg
           id="ham"
           xmlns="http://www.w3.org/2000/svg"
