@@ -62,7 +62,7 @@ const Works = () => {
                 muted
                 loop
               >
-                <source src="/public/p1.mp4" type="video/webm" />
+                <source src="/p1.mp4" type="video/mp4" />
               </video>
             </Card>
             <h2 data-aos="fade-left" className="text-lg text-left ml-5 w-[40vw]">
@@ -80,7 +80,7 @@ const Works = () => {
                 muted
                 loop
               >
-                <source src="/public/p2.mp4" type="video/webm" />
+                <source src="/p2.mp4" type="video/mp4" />
               </video>
             </Card>
             <h2 data-aos="fade-left" className="text-lg text-left ml-5 w-[40vw]">
@@ -98,7 +98,7 @@ const Works = () => {
                 muted
                 loop
               >
-                <source src="/public/p3.mp4" type="video/webm" />
+                <source src="/p3.mp4" type="video/mp4" />
               </video>
             </Card>
             <h2 data-aos="fade-left" className="text-lg text-left ml-5 w-[40vw]">
