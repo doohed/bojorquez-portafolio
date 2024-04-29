@@ -84,7 +84,7 @@ const Hero = () => {
           <Message
             className="absolute left-[50%] 
           translate-x-[-50%] 
-          bottom-[0vh]
+          bottom-[2vh]
           "
           >
             <p className="animate-bounce"> SCROLL DOWN</p>
