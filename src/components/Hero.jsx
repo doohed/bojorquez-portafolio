@@ -22,7 +22,7 @@ const Top = styled.div`
 `;
 
 const Message = styled.div`
-  width: 25vw;
+  width: 100vw;
   user-select: none;
 `;
 
@@ -84,7 +84,7 @@ const Hero = () => {
           <Message
             className="absolute left-[50%] 
           translate-x-[-50%] 
-          bottom-[2vh]
+          bottom-[0px]
           "
           >
             <p className="animate-bounce"> SCROLL DOWN</p>
