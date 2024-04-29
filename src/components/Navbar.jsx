@@ -22,7 +22,7 @@ const Item = styled.div`
 
 const Navbar = () => {
   return (
-    <Container className="absolute">
+    <Container className="absolute">      
       <List className="inline">
         <Link href="#about">
           <Item>

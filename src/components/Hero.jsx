@@ -52,7 +52,7 @@ const Hero = () => {
   return (
     <Section>
       <Container>
-        <Top>
+        <Top id="home">
           <Square
             className=" animate-[squareIn_2s_ease-in-out]
           relative left-[50%] 

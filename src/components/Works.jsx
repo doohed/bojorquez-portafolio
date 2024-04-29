@@ -19,6 +19,13 @@ const Card = styled.div`
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  @media (max-width: 1200px) {
+    height: 30rem;
+  }
+  @media (max-width: 960px) {
+    height: 20rem;
+    width: auto;
+  }
 `;
 
 const Button = styled.button`
@@ -45,22 +52,22 @@ const Works = () => {
           <div>
             <h1
               data-aos="fade-right"
-              className="text-9xl text-left m-5 mb-[70px] font-['Open_Sans']"
+              className="text-9xl text-left m-5 mb-[70px] font-['Open_Sans'] max-[960px]:text-[19vw]"
             >
               / WORKS
             </h1>
-            <h2 data-aos="fade-left" className="text-4xl text-right m-5">
+            <h2 data-aos="fade-left" className="text-4xl text-right m-5 max-[960px]:w-[auto]">
               Featured projects that have been meticulously crafted with passion
               and purpose.
             </h2>
           </div>
-          <div data-aos="fade" className="mt-[10vmin] flex overflow-hidden ">
+          <div data-aos="fade" className="mt-[10vmin] flex overflow-hidden max-[960px]:inline">
             <Card
               data-aos="fade-right"
               className="bg-[url('https://images.unsplash.com/photo-1654448189789-b823e1794844?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
             >
               <video
-                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]"
+                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[60vw] max-[700px]:w-[80vw]"
                 autoPlay
                 muted
                 loop
@@ -71,7 +78,7 @@ const Works = () => {
             <div>
               <h2
                 data-aos="fade-left"
-                className="text-lg text-left ml-5 w-[35vw]"
+                className="text-lg text-left ml-5 w-[35vw] max-[960px]:w-[auto]"
               >
                 Minimalist weather web app with react and openweather api.
               </h2>
@@ -84,13 +91,13 @@ const Works = () => {
               </div>
             </div>
           </div>
-          <div data-aos="fade" className="mt-[10vmin] flex overflow-hidden">
+          <div data-aos="fade" className="mt-[10vmin] flex overflow-hidden max-[960px]:inline">
             <Card
               data-aos=" fade-right"
               className="bg-[url('https://images.unsplash.com/photo-1630389715052-983a8e31faa6?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
             >
               <video
-                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]"
+                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[60vw] max-[700px]:w-[80vw]"
                 autoPlay
                 muted
                 loop
@@ -101,7 +108,7 @@ const Works = () => {
             <div>
               <h2
                 data-aos="fade-left"
-                className="text-lg text-left ml-5 w-[35vw]"
+                className="text-lg text-left ml-5 w-[35vw] max-[960px]:w-[auto]"
               >
                 Small art gallery portfolio with some eye catching animations.
               </h2>
@@ -116,14 +123,14 @@ const Works = () => {
           </div>
           <div
             data-aos="fade"
-            className="mt-[10vmin] mb-[10vmin] flex overflow-hidden"
+            className="mt-[10vmin] mb-[10vmin] flex overflow-hidden max-[960px]:inline"
           >
             <Card
               data-aos=" fade-right"
               className="bg-[url('https://images.unsplash.com/photo-1614617021766-d00d5d28b1ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
             >
               <video
-                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%]"
+                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[60vw] max-[700px]:w-[80vw]"
                 autoPlay
                 muted
                 loop
@@ -134,7 +141,7 @@ const Works = () => {
             <div>
               <h2
                 data-aos="fade-left"
-                className="text-lg text-left ml-5 w-[35vw]"
+                className="text-lg text-left ml-5 w-[35vw] max-[960px]:w-[auto]"
               >
                 Minimalist and modern ecommerce web page.
               </h2>

@@ -25,24 +25,24 @@ const About = () => {
             <div className="border-b-2 border-gray-700">
               <h1
                 data-aos="fade-right"
-                className="text-9xl text-left m-0 mb-[90px] font-['Open_Sans']"
+                className="text-9xl text-left m-0 mb-[90px] font-['Open_Sans'] max-[960px]:text-[20vw]"
               >
                 /ABOUT
               </h1>
-              <h2 data-aos="fade-left" className="text-4xl text-right m-5">
+              <h2 data-aos="fade-left" className="text-4xl text-right m-5 max-[960px]:w-[auto]">
                 Based in Mexico with a passion for building digital services
               </h2>
             </div>
             <div className="overflow-hidden border-b-2 border-gray-700">
               <h1
                 data-aos="fade-right"
-                className="text-6xl text-left m-5 mb-[70px]"
+                className="text-6xl text-left m-5 mb-[70px] max-[960px]:text-[13vw]"
               >
                 Web Development
               </h1>
               <h2
                 data-aos="fade-up"
-                className="text-2xl text-left m-5 w-[50vw]"
+                className="text-2xl text-left m-5 w-[50vw] max-[960px]:w-[auto]"
               >
                 I create unique, custom-coded websites that are tailored to your
                 brand. I focus on scalability, performance, accessibility, and
@@ -52,7 +52,7 @@ const About = () => {
             <div className="overflow-hidden">
               <h1
                 data-aos="fade-right"
-                className="text-6xl text-left m-5 mb-[70px]"
+                className="text-6xl text-left m-5 mb-[70px] max-[960px]:text-[13vw]"
               >
                 Skills
               </h1>
