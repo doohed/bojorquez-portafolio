@@ -26,8 +26,8 @@ const Message = styled.div`
 `;
 
 const Square = styled.div`
-  height: 90vh;
-  width: 50vw;
+  height: 42vw;
+  width: 35vw;
   background-color: black;
   z-index: 1;
   overflow: hidden;
