@@ -26,7 +26,7 @@ const Option = styled.div`
 
 const Item = styled.div`
   text-align: left;
-  width: 75px;
+  width: 80px;
   height: 24px;
   overflow: hidden;
   font-weight: 600;
@@ -115,7 +115,10 @@ const Navbar = () => {
   return (
     <Container className="absolute">
       <List className="inline">
-      <Link href="https://drive.google.com/file/d/1tnnMX93S_GMDSziyhXHx8ld6cLGHhu6N/view" target="_blank">
+        <Link
+          href="https://drive.google.com/file/d/1tnnMX93S_GMDSziyhXHx8ld6cLGHhu6N/view"
+          target="_blank"
+        >
           <Item>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">Resume</span>
@@ -124,7 +127,10 @@ const Navbar = () => {
             </div>
           </Item>
         </Link>
-      <Link href="https://github.com/doohed/bojorquez-portafolio" target="_blank">
+        <Link
+          href="https://github.com/doohed/bojorquez-portafolio"
+          target="_blank"
+        >
           <Item>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">Source</span>
@@ -212,12 +218,20 @@ const Navbar = () => {
             </a>
           </div>
           <div>
-            <a href="https://github.com/doohed/bojorquez-portafolio" target="_blank" onClick={menu}>
+            <a
+              href="https://github.com/doohed/bojorquez-portafolio"
+              target="_blank"
+              onClick={menu}
+            >
               <Option>Source</Option>
             </a>
           </div>
           <div>
-            <a href="https://drive.google.com/file/d/1tnnMX93S_GMDSziyhXHx8ld6cLGHhu6N/view" target="_blank" onClick={menu}>
+            <a
+              href="https://drive.google.com/file/d/1tnnMX93S_GMDSziyhXHx8ld6cLGHhu6N/view"
+              target="_blank"
+              onClick={menu}
+            >
               <Option>Resume</Option>
             </a>
           </div>

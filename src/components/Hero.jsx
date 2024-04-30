@@ -4,7 +4,6 @@ const Section = styled.div``;
 
 const Container = styled.div`
   overflow: hidden;
-  
 `;
 
 const Title = styled.div`

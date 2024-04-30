@@ -22,7 +22,7 @@ const List = styled.div``;
 
 const Item = styled.div`
   text-align: left;
-  width: 90px;
+  width: 110px;
   height: 24px;
   overflow: hidden;
   font-weight: 600;
