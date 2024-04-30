@@ -9,7 +9,7 @@ const Container = styled.div`
   overflow: hidden;
   color: #bfbfb1;
   background-color: black;
-  background-image: url('/noise.png');
+  background-image: url("/noise.png");
 `;
 
 const Card = styled.div`
@@ -27,12 +27,17 @@ const Card = styled.div`
   }
 `;
 
+const Link = styled.a`
+  cursor: none;
+`;
+
 const Button = styled.button`
   border: 1px solid #bfbfb1;
   border-radius: 10px;
   margin: 10px;
   padding: 5px;
   transition: all 0.5s ease-out;
+  cursor: none;
   &:hover {
     background-color: #bfbfb1;
     color: black;
@@ -43,6 +48,21 @@ const Works = () => {
   useEffect(() => {
     AOS.init({ duration: 700 });
   }, []);
+
+  function hover() {
+    document.getElementById("cursor").style.backdropFilter = "invert(0)";
+    document.getElementById("cursor").style.border = "1px solid white";
+    document.getElementById("cursor").style.height = "50px";
+    document.getElementById("cursor").style.width = "50px";
+    console.log("check");
+  }
+
+  function exitHover() {
+    document.getElementById("cursor").style.backdropFilter = "invert(1)";
+    document.getElementById("cursor").style.border = "0px solid white";
+    document.getElementById("cursor").style.height = "32px";
+    document.getElementById("cursor").style.width = "32px";
+  }
 
   return (
     <Section id="work" className="relative">
@@ -55,25 +75,38 @@ const Works = () => {
             >
               / WORKS
             </h1>
-            <h2 data-aos="fade-left" className="text-4xl text-right m-5 max-[960px]:w-[auto]">
+            <h2
+              data-aos="fade-left"
+              className="text-4xl text-right m-5 max-[960px]:w-[auto]"
+            >
               Featured projects that have been meticulously crafted with passion
               and purpose.
             </h2>
           </div>
-          <div data-aos="fade" className="mt-[10vmin] flex overflow-hidden max-[960px]:inline">
-            <Card
-              data-aos="fade-right"
-              className="bg-[url('https://images.unsplash.com/photo-1654448189789-b823e1794844?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
+          <div
+            data-aos="fade"
+            className="mt-[10vmin] flex overflow-hidden max-[960px]:inline"
+          >
+            <Link
+              onMouseEnter={hover}
+              onMouseLeave={exitHover}
+              href="https://weather-app-eosin-omega.vercel.app/"
+              target="_blank"
             >
-              <video
-                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[60vw] max-[700px]:w-[80vw]"
-                autoPlay
-                muted
-                loop
+              <Card
+                data-aos="fade-right"
+                className="bg-[url('https://images.unsplash.com/photo-1654448189789-b823e1794844?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
               >
-                <source src="/p1.mp4" type="video/mp4" />
-              </video>
-            </Card>
+                <video
+                  className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[60vw] max-[700px]:w-[80vw]"
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/p1.mp4" type="video/mp4" />
+                </video>
+              </Card>
+            </Link>
             <div>
               <h2
                 data-aos="fade-left"
@@ -85,25 +118,49 @@ const Works = () => {
                 Weather.app
               </h1>
               <div data-aos="fade-left" className="text-left m-3">
-                <a href="https://weather-app-eosin-omega.vercel.app/" target="_blank"><Button>Live Demo</Button></a>
-                <a href="https://github.com/doohed/weather-app" target="_blank"><Button>Source</Button></a>
+                <Link
+                  onMouseEnter={hover}
+                  onMouseLeave={exitHover}
+                  href="https://weather-app-eosin-omega.vercel.app/"
+                  target="_blank"
+                >
+                  <Button>Live Demo</Button>
+                </Link>
+                <Link
+                  onMouseEnter={hover}
+                  onMouseLeave={exitHover}
+                  href="https://github.com/doohed/weather-app"
+                  target="_blank"
+                >
+                  <Button>Source</Button>
+                </Link>
               </div>
             </div>
           </div>
-          <div data-aos="fade" className="mt-[10vmin] flex overflow-hidden max-[960px]:inline">
-            <Card
-              data-aos=" fade-right"
-              className="bg-[url('https://images.unsplash.com/photo-1630389715052-983a8e31faa6?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
+          <div
+            data-aos="fade"
+            className="mt-[10vmin] flex overflow-hidden max-[960px]:inline"
+          >
+            <Link
+              onMouseEnter={hover}
+              onMouseLeave={exitHover}
+              href="https://art-gallery-inky.vercel.app/"
+              target="_blank"
             >
-              <video
-                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[50vw] max-[700px]:w-[70vw]"
-                autoPlay
-                muted
-                loop
+              <Card
+                data-aos=" fade-right"
+                className="bg-[url('https://images.unsplash.com/photo-1630389715052-983a8e31faa6?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
               >
-                <source src="/p2.mp4" type="video/mp4" />
-              </video>
-            </Card>
+                <video
+                  className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[50vw] max-[700px]:w-[70vw]"
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/p2.mp4" type="video/mp4" />
+                </video>
+              </Card>
+            </Link>
             <div>
               <h2
                 data-aos="fade-left"
@@ -115,8 +172,22 @@ const Works = () => {
                 Art-gallery
               </h1>
               <div data-aos="fade-left" className="text-left m-3">
-              <a href="https://art-gallery-inky.vercel.app/" target="_blank"><Button>Live Demo</Button></a>
-                <a href="https://github.com/doohed/art-gallery" target="_blank"><Button>Source</Button></a>
+                <Link
+                  onMouseEnter={hover}
+                  onMouseLeave={exitHover}
+                  href="https://art-gallery-inky.vercel.app/"
+                  target="_blank"
+                >
+                  <Button>Live Demo</Button>
+                </Link>
+                <Link
+                  onMouseEnter={hover}
+                  onMouseLeave={exitHover}
+                  href="https://github.com/doohed/art-gallery"
+                  target="_blank"
+                >
+                  <Button>Source</Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -124,19 +195,26 @@ const Works = () => {
             data-aos="fade"
             className="mt-[10vmin] mb-[10vmin] flex overflow-hidden max-[960px]:inline"
           >
-            <Card
-              data-aos=" fade-right"
-              className="bg-[url('https://images.unsplash.com/photo-1614617021766-d00d5d28b1ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
+            <Link
+              onMouseEnter={hover}
+              onMouseLeave={exitHover}
+              href="http://essentia-eight.vercel.app"
+              target="_blank"
             >
-              <video
-                className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[50vw] max-[700px]:w-[70vw]"
-                autoPlay
-                muted
-                loop
+              <Card
+                data-aos=" fade-right"
+                className="bg-[url('https://images.unsplash.com/photo-1614617021766-d00d5d28b1ab?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] relative rounded-3xl"
               >
-                <source src="/p3.mp4" type="video/mp4" />
-              </video>
-            </Card>
+                <video
+                  className="w-[40vw] rounded-lg absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] max-[960px]:w-[50vw] max-[700px]:w-[70vw]"
+                  autoPlay
+                  muted
+                  loop
+                >
+                  <source src="/p3.mp4" type="video/mp4" />
+                </video>
+              </Card>
+            </Link>
             <div>
               <h2
                 data-aos="fade-left"
@@ -147,9 +225,23 @@ const Works = () => {
               <h1 data-aos="fade-left" className="text-4xl text-left m-5">
                 Essentia
               </h1>
-              <div data-aos="fade-left" className="text-left m-3">
-              <a href="http://essentia-eight.vercel.app" target="_blank"><Button>Live Demo</Button></a>
-                <a href="https://github.com/doohed/essentia" target="_blank"><Button>Source</Button></a>
+              <div data-aos="fade-left" className=" text-left m-3">
+                <Link
+                  onMouseEnter={hover}
+                  onMouseLeave={exitHover}
+                  href="http://essentia-eight.vercel.app"
+                  target="_blank"
+                >
+                  <Button>Live Demo</Button>
+                </Link>
+                <Link
+                  onMouseEnter={hover}
+                  onMouseLeave={exitHover}
+                  href="https://github.com/doohed/essentia"
+                  target="_blank"
+                >
+                  <Button>Source</Button>
+                </Link>
               </div>
             </div>
           </div>

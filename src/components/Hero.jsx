@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-const Section = styled.div``;
+const Section = styled.div`
+`;
 
 const Container = styled.div`
   overflow: hidden;

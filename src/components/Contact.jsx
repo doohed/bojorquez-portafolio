@@ -13,9 +13,9 @@ const Container = styled.div`
 `;
 
 const Link = styled.a`
-  cursor: pointer;
   margin: 1rem;
   text-transform: uppercase;
+  cursor: none;
 `;
 
 const List = styled.div``;
@@ -34,6 +34,7 @@ const Button = styled.button`
   margin: 10px;
   padding: 5px;
   transition: all 0.5s ease-out;
+  cursor: none;
   &:hover {
     background-color: #080807;
     color: #dbdbcc;
@@ -54,6 +55,21 @@ const Contact = () => {
     AOS.init({ duration: 700 });
   }, []);
 
+  function hover () {
+    document.getElementById("cursor").style.backdropFilter= 'invert(0)';
+    document.getElementById("cursor").style.border= '1px solid white';
+    document.getElementById("cursor").style.height= '50px';
+    document.getElementById("cursor").style.width= '50px';
+    console.log("check")
+  }
+
+  function exitHover() {
+    document.getElementById("cursor").style.backdropFilter= 'invert(1)';
+    document.getElementById("cursor").style.border= '0px solid white';
+    document.getElementById("cursor").style.height= '32px'; 
+    document.getElementById("cursor").style.width= '32px';
+  }
+
   return (
     <Section id="contact">
       <Container>
@@ -65,7 +81,13 @@ const Contact = () => {
         </h1>
         <div className="w-[80px]">
           <List className="inline">
-            <Link data-aos="fade-right" href="https://github.com/doohed/" target="_blank">
+            <Link
+              onMouseEnter={hover}
+              onMouseLeave={exitHover}
+              data-aos="fade-right"
+              href="https://github.com/doohed/"
+              target="_blank"
+            >
               <Item>
                 <div className="hover:translate-y-[-25px] ease-in-out duration-200">
                   <span className="text-left">Github</span>
@@ -74,7 +96,13 @@ const Contact = () => {
                 </div>
               </Item>
             </Link>
-            <Link data-aos="fade-right" href="https://www.linkedin.com/in/bojorquez-godina-martin-esteban-908609270/" target="_blank">
+            <Link
+              onMouseEnter={hover}
+              onMouseLeave={exitHover}
+              data-aos="fade-right"
+              href="https://www.linkedin.com/in/bojorquez-godina-martin-esteban-908609270/"
+              target="_blank"
+            >
               <Item>
                 <div className="hover:translate-y-[-25px] ease-in-out duration-200">
                   <span className="text-left">Linkedin</span>
@@ -83,7 +111,13 @@ const Contact = () => {
                 </div>
               </Item>
             </Link>
-            <Link data-aos="fade-right" href="https://www.instagram.com/dohed_/" target="_blank">
+            <Link
+              onMouseEnter={hover}
+              onMouseLeave={exitHover}
+              data-aos="fade-right"
+              href="https://www.instagram.com/dohed_/"
+              target="_blank"
+            >
               <Item>
                 <div className="hover:translate-y-[-25px] ease-in-out duration-200">
                   <span className="text-left">Instagram</span>
@@ -96,6 +130,8 @@ const Contact = () => {
         </div>
         <div className="text-left ml-[-10px]">
           <Button
+            onMouseEnter={hover}
+            onMouseLeave={exitHover}
             className="email"
             onClick={() => {
               navigator.clipboard.writeText(email);
@@ -105,7 +141,11 @@ const Contact = () => {
             bojorquezdev@gmail.com
           </Button>
         </div>
-        {isCopied && <div data-aos="fade-right" className="text-left">Copied to clipboard!</div>}
+        {isCopied && (
+          <div data-aos="fade-right" className="text-left">
+            Copied to clipboard!
+          </div>
+        )}
       </Container>
     </Section>
   );

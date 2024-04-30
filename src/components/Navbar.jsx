@@ -8,16 +8,17 @@ const Container = styled.div`
 `;
 
 const Link = styled.a`
-  cursor: pointer;
   margin: 1rem;
   text-transform: uppercase;
 `;
 
-const List = styled.div``;
+const List = styled.div`
+`;
 
 const Option = styled.div`
   transition: all 0.3s;
   color: #dbdbcc;
+  cursor: none;
   &:hover {
     transform: translate(20px);
     color: gray;
@@ -30,23 +31,28 @@ const Item = styled.div`
   height: 24px;
   overflow: hidden;
   font-weight: 600;
+  cursor: none;
 `;
 
 const Menu = styled.div`
   position: fixed;
-  right: 5vw;
-  top: 1rem;
-  color: #000000;
+  left: 15px;
+  top: 15px;
+  color: #dbdbcc;
   height: 50px;
   width: 50px;
-  background-color: #dbdbcc;
+  background-image: url('/noise.png');
+  background-color: #080807;
   transition: all 0.7s;
   opacity: 0;
-  background-image: url("/noise.png");
   background-position: center;
   z-index: 3;
-  cursor: pointer;
-  transform: translate(0%, 0%);
+  transform: translate(0%, -120%);
+  backdrop-filter: invert(0);
+  @media (max-width: 960px) {
+    width: 9vw;
+    height: 9vw;
+  }
 `;
 
 const Options = styled.div`
@@ -54,17 +60,17 @@ const Options = styled.div`
   position: fixed;
   width: 50vw;
   height: 98vh;
-  top: 10px;
-  right: 10px;
+  top: 4px;
+  left: 10px;
   z-index: 2;
   background-image: url("/noise.png");
   background-position: center;
-  transform: translate(120%, 0%);
+  transform: translate(-120%, 0%);
   @media (max-width: 960px) {
     width: 100vw;
     height: 100vh;
     top: 0px;
-    right: 0px;
+    left: 0px;
   }
 `;
 
@@ -83,13 +89,13 @@ const Navbar = () => {
       document.getElementById("menu").style.userSelect = "auto";
       document.getElementById("menu").style.transform = "translate(0%)";
     } else {
-      document.getElementById("menu").style.transform = "translate(0%,-300%)";
+      document.getElementById("menu").style.transform = "translate(0%,-120%)";
       document.getElementById("menu").style.opacity = "0";
       document.getElementById("menu").style.userSelect = "none";
       document.querySelector("#x").style.opacity = "0";
       document.querySelector("#ham").style.opacity = "1";
       document.getElementById("options").style.transform =
-        "translate(120%, 0%)";
+        "translate(-120%, 0%)";
       setIsOpen(false);
     }
   });
@@ -100,7 +106,7 @@ const Navbar = () => {
       document.querySelector("#ham").style.opacity = "1";
       document.getElementById("options").style.opacity = "0";
       document.getElementById("options").style.transform =
-        "translate(120%, 0%)";
+        "translate(-120%, 0%)";
 
       setIsOpen(false);
     } else {
@@ -112,6 +118,20 @@ const Navbar = () => {
     }
   }
 
+  function hover () {
+    document.getElementById("cursor").style.backdropFilter= 'invert(0)';
+    document.getElementById("cursor").style.border= '1px solid white';
+    document.getElementById("cursor").style.height= '50px';
+    document.getElementById("cursor").style.width= '50px';
+    console.log("check")
+  }
+
+  function exitHover() {
+    document.getElementById("cursor").style.backdropFilter= 'invert(1)';
+    document.getElementById("cursor").style.border= '0px solid white';
+    document.getElementById("cursor").style.height= '32px'; 
+    document.getElementById("cursor").style.width= '32px';
+  }
   return (
     <Container className="absolute">
       <List className="inline">
@@ -119,7 +139,7 @@ const Navbar = () => {
           href="https://drive.google.com/file/d/1tnnMX93S_GMDSziyhXHx8ld6cLGHhu6N/view"
           target="_blank"
         >
-          <Item>
+          <Item onMouseEnter={hover} onMouseLeave={exitHover}>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">Resume</span>
               <br />
@@ -131,7 +151,7 @@ const Navbar = () => {
           href="https://github.com/doohed/bojorquez-portafolio"
           target="_blank"
         >
-          <Item>
+          <Item onMouseEnter={hover} onMouseLeave={exitHover}>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">Source</span>
               <br />
@@ -140,7 +160,7 @@ const Navbar = () => {
           </Item>
         </Link>
         <Link href="#about" onClick={() => zenScroll.to(about)}>
-          <Item>
+          <Item onMouseEnter={hover} onMouseLeave={exitHover}>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">About</span>
               <br />
@@ -149,7 +169,7 @@ const Navbar = () => {
           </Item>
         </Link>
         <Link href="#work" onClick={() => zenScroll.to(work)}>
-          <Item>
+          <Item onMouseEnter={hover} onMouseLeave={exitHover}>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">Works</span>
               <br />
@@ -158,7 +178,7 @@ const Navbar = () => {
           </Item>
         </Link>
         <Link onClick={() => zenScroll.toY(4550)}>
-          <Item>
+          <Item onMouseEnter={hover} onMouseLeave={exitHover}>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
               <span className="text-left">Contact</span>
               <br />
@@ -167,7 +187,7 @@ const Navbar = () => {
           </Item>
         </Link>
       </List>
-      <Menu id="menu" className="hide rounded-full" onClick={menu}>
+      <Menu onMouseEnter={hover} onMouseLeave={exitHover} id="menu" className="hide rounded-full" onClick={menu}>
         <svg
           id="ham"
           xmlns="http://www.w3.org/2000/svg"
@@ -196,28 +216,28 @@ const Navbar = () => {
         </svg>
       </Menu>
       <Options id="options" className="rounded ease-out duration-700">
-        <div className="text-left p-10 text-white w-[240px] text-[4vw] max-[960px]:text-[10vw]">
-          <div>
+        <div className="absolute top-[5vh] text-left p-10 text-white w-[240px] text-[4vw] max-[960px]:text-[10vw]">
+          <div onMouseEnter={hover} onMouseLeave={exitHover}>
             <a href="#home" onClick={menu}>
               <Option>Home</Option>
             </a>
           </div>
-          <div>
+          <div onMouseEnter={hover} onMouseLeave={exitHover}>
             <a href="#about" onClick={menu}>
               <Option>About</Option>
             </a>
           </div>
-          <div>
+          <div onMouseEnter={hover} onMouseLeave={exitHover}>
             <a href="#work" onClick={menu}>
               <Option>Work</Option>
             </a>
           </div>
-          <div>
+          <div onMouseEnter={hover} onMouseLeave={exitHover}>
             <a href="#contact" onClick={menu}>
               <Option>Contact</Option>
             </a>
           </div>
-          <div>
+          <div onMouseEnter={hover} onMouseLeave={exitHover}>
             <a
               href="https://github.com/doohed/bojorquez-portafolio"
               target="_blank"
@@ -226,7 +246,7 @@ const Navbar = () => {
               <Option>Source</Option>
             </a>
           </div>
-          <div>
+          <div onMouseEnter={hover} onMouseLeave={exitHover}>
             <a
               href="https://drive.google.com/file/d/1tnnMX93S_GMDSziyhXHx8ld6cLGHhu6N/view"
               target="_blank"
