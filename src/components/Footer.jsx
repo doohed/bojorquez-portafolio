@@ -1,3 +1,5 @@
+import styled from "styled-components";
+
 const Footer = () => {
   function hover() {
     document.getElementById("cursor").style.backdropFilter = "invert(0)";
@@ -13,12 +15,16 @@ const Footer = () => {
     document.getElementById("cursor").style.width = "32px";
   }
 
+  const Text = styled.h1 `
+    cursor: url(cursor.svg) 12 12, auto;
+  `;
+
   return (
     <div className="h-[10vh]">
       <a onMouseEnter={hover} onMouseLeave={exitHover} href="#home">
-        <h1 className="cursor-[url(cursor.svg)_12_12,_auto;] text-4xl m-0 hover:text-[gray] ease-in-out duration-300 max-[960px]:text-[5vw]">
+        <Text className=" text-4xl m-0 hover:text-[gray] ease-in-out duration-300 max-[960px]:text-[5vw]">
           © 2024 BOJORQUEZ.DEV
-        </h1>
+        </Text>
       </a>
     </div>
   );
