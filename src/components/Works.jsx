@@ -28,7 +28,7 @@ const Card = styled.div`
 `;
 
 const Link = styled.a`
-  cursor: none;
+  cursor: url(cursor.svg) 12 12, auto;
 `;
 
 const Button = styled.button`
@@ -37,7 +37,7 @@ const Button = styled.button`
   margin: 10px;
   padding: 5px;
   transition: all 0.5s ease-out;
-  cursor: none;
+  cursor: url(cursor.svg) 12 12, auto;
   &:hover {
     background-color: #bfbfb1;
     color: black;

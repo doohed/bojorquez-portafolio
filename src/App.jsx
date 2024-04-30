@@ -44,7 +44,6 @@ function App() {
     };
 
     window.addEventListener("mousemove", mouseMove);
-
     return () => {
       window.removeEventListener("mousemove", mouseMove);
     };

@@ -15,7 +15,7 @@ const Container = styled.div`
 const Link = styled.a`
   margin: 1rem;
   text-transform: uppercase;
-  cursor: none;
+  cursor: url(cursor.svg) 12 12, auto;
 `;
 
 const List = styled.div``;
@@ -34,7 +34,7 @@ const Button = styled.button`
   margin: 10px;
   padding: 5px;
   transition: all 0.5s ease-out;
-  cursor: none;
+  cursor: url(cursor.svg) 12 12, auto;
   &:hover {
     background-color: #080807;
     color: #dbdbcc;

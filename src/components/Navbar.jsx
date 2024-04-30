@@ -18,7 +18,7 @@ const List = styled.div`
 const Option = styled.div`
   transition: all 0.3s;
   color: #dbdbcc;
-  cursor: none;
+  cursor: url(cursor.svg) 12 12, auto;
   &:hover {
     transform: translate(20px);
     color: gray;
@@ -31,7 +31,7 @@ const Item = styled.div`
   height: 24px;
   overflow: hidden;
   font-weight: 600;
-  cursor: none;
+  cursor: url(cursor.svg) 12 12, auto;
 `;
 
 const Menu = styled.div`

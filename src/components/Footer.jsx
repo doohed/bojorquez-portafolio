@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <div className="h-[10vh]">
       <a onMouseEnter={hover} onMouseLeave={exitHover} href="#home">
-        <h1 className="cursor-none text-4xl m-0 hover:text-[gray] ease-in-out duration-300 max-[960px]:text-[5vw]">
+        <h1 className="cursor-[url(cursor.svg)_12_12,_auto;] text-4xl m-0 hover:text-[gray] ease-in-out duration-300 max-[960px]:text-[5vw]">
           © 2024 BOJORQUEZ.DEV
         </h1>
       </a>
