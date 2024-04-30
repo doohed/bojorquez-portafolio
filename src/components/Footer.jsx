@@ -15,16 +15,16 @@ const Footer = () => {
     document.getElementById("cursor").style.width = "32px";
   }
 
-  const Text = styled.h1 `
+  const Link = styled.a `
     cursor: url(cursor.svg) 12 12, auto;
   `;
 
   return (
-    <div className="h-[10vh]">
-      <a onMouseEnter={hover} onMouseLeave={exitHover} href="#home">
-        <Text className=" text-4xl m-0 hover:text-[gray] ease-in-out duration-300 max-[960px]:text-[5vw]">
+    <div className="h-[5vh]">
+      <a>
+        <h1 className="text-left text-2xl ml-[2.5vw] max-[960px]:text-1xl">
           © 2024 BOJORQUEZ.DEV
-        </Text>
+        </h1>
       </a>
     </div>
   );
