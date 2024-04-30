@@ -71,7 +71,7 @@ const Contact = () => {
 
   return (
     <Section id="contact">
-      <Container>
+      <Container data-aos="fade">      
         <h1
           data-aos="fade-right"
           className="text-9xl text-left m-0 mb-[90px] font-['Open_Sans'] max-[960px]:text-[18vw]"
@@ -83,7 +83,6 @@ const Contact = () => {
             <Link
               onMouseEnter={hover}
               onMouseLeave={exitHover}
-              data-aos="fade-right"
               href="https://github.com/doohed/"
               target="_blank"
             >
@@ -97,8 +96,7 @@ const Contact = () => {
             </Link>
             <Link
               onMouseEnter={hover}
-              onMouseLeave={exitHover}
-              data-aos="fade-right"
+              onMouseLeave={exitHover}              
               href="https://www.linkedin.com/in/bojorquez-godina-martin-esteban-908609270/"
               target="_blank"
             >
@@ -112,8 +110,7 @@ const Contact = () => {
             </Link>
             <Link
               onMouseEnter={hover}
-              onMouseLeave={exitHover}
-              data-aos="fade-right"
+              onMouseLeave={exitHover}            
               href="https://www.instagram.com/dohed_/"
               target="_blank"
             >
