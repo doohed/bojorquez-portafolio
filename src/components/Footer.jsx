@@ -4,7 +4,6 @@ const Footer = () => {
     document.getElementById("cursor").style.border = "1px solid white";
     document.getElementById("cursor").style.height = "50px";
     document.getElementById("cursor").style.width = "50px";
-    console.log("check");
   }
 
   function exitHover() {
