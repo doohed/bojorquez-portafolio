@@ -140,9 +140,9 @@ const Navbar = () => {
         >
           <Item onMouseEnter={hover} onMouseLeave={exitHover}>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
-              <span className="text-left">Resume</span>
+              <span className="text-left">CV</span>
               <br />
-              <span className="text-left">Resume</span>
+              <span className="text-left">CV</span>
             </div>
           </Item>
         </Link>
@@ -251,7 +251,7 @@ const Navbar = () => {
               target="_blank"
               onClick={menu}
             >
-              <Option>Resume</Option>
+              <Option>CV</Option>
             </a>
           </div>
         </div>
