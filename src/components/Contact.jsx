@@ -107,21 +107,7 @@ const Contact = () => {
                   <span className="text-left">Linkedin</span>
                 </div>
               </Item>
-            </Link>
-            <Link
-              onMouseEnter={hover}
-              onMouseLeave={exitHover}            
-              href="https://www.instagram.com/dohed_/"
-              target="_blank"
-            >
-              <Item>
-                <div className="hover:translate-y-[-25px] ease-in-out duration-200">
-                  <span className="text-left">Instagram</span>
-                  <br />
-                  <span className="text-left">Instagram</span>
-                </div>
-              </Item>
-            </Link>
+            </Link>          
           </List>
         </div>
         <div className="text-left ml-[-10px]">
