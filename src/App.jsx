@@ -24,7 +24,7 @@ const Cursor = styled.div`
   user-select: none;
   pointer-events: none;
   z-index: 5;
-  @media (max-width: 960px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `;
@@ -50,7 +50,7 @@ function App() {
     };
   }, []);
 
-  useEffect(() => {
+  function moveHandler() {
     document.getElementById("cursor").style.transform = `
     translate(${
       mousePosition.x - document.getElementById("cursor").clientWidth / 2
@@ -58,12 +58,11 @@ function App() {
       ${
         mousePosition.y - document.getElementById("cursor").clientHeight / 2
       }px)`;
-  }, [mousePosition.x, mousePosition.y]);
-
-
+      document.getElementById("cursor").style.opacity = "1";
+  }
 
   return (
-    <Container>
+    <Container onMouseMove={moveHandler}>
       <Cursor id="cursor" className="ease-out duration-500" />
       <Navbar />
       <Hero />
