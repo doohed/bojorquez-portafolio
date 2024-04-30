@@ -63,7 +63,7 @@ const About = () => {
                 Html <span data-aos="fade-left">•</span>
               </h2>
               <h2 data-aos="fade-left" className="text-4xl text-right m-5">
-                CSS<span data-aos="fade-left">•</span>
+                CSS <span data-aos="fade-left">•</span>
               </h2>
               <h2 data-aos="fade-left" className="text-4xl text-right m-5">
                 Tailwind <span data-aos="fade-left">•</span>

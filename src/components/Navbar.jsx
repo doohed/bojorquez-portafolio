@@ -115,6 +115,24 @@ const Navbar = () => {
   return (
     <Container className="absolute">
       <List className="inline">
+      <Link href="https://drive.google.com/file/d/1tnnMX93S_GMDSziyhXHx8ld6cLGHhu6N/view" target="_blank">
+          <Item>
+            <div className="hover:translate-y-[-25px] ease-in-out duration-200">
+              <span className="text-left">Resume</span>
+              <br />
+              <span className="text-left">Resume</span>
+            </div>
+          </Item>
+        </Link>
+      <Link href="https://github.com/doohed/bojorquez-portafolio" target="_blank">
+          <Item>
+            <div className="hover:translate-y-[-25px] ease-in-out duration-200">
+              <span className="text-left">Source</span>
+              <br />
+              <span className="text-left">Source</span>
+            </div>
+          </Item>
+        </Link>
         <Link href="#about" onClick={() => zenScroll.to(about)}>
           <Item>
             <div className="hover:translate-y-[-25px] ease-in-out duration-200">
@@ -191,6 +209,16 @@ const Navbar = () => {
           <div>
             <a href="#contact" onClick={menu}>
               <Option>Contact</Option>
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com/doohed/bojorquez-portafolio" target="_blank" onClick={menu}>
+              <Option>Source</Option>
+            </a>
+          </div>
+          <div>
+            <a href="https://drive.google.com/file/d/1tnnMX93S_GMDSziyhXHx8ld6cLGHhu6N/view" target="_blank" onClick={menu}>
+              <Option>Resume</Option>
             </a>
           </div>
         </div>
