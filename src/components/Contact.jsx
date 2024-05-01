@@ -122,7 +122,7 @@ const Contact = () => {
             bojorquezdev@gmail.com
           </Button>
           {isCopied && (
-            <div data-aos="fade-right" className="text-black text-left ml-[10px]">Copied to clipboard!</div>
+            <div className="text-black text-left ml-[10px]">Copied to clipboard!</div>
           )}
         </div>
       </Container>
