@@ -111,7 +111,7 @@ const Works = () => {
                 data-aos="fade-left"
                 className="text-lg text-left ml-5 w-[35vw] max-[960px]:w-[auto]"
               >
-                Minimalist weather web app with react and openweather api.
+                Minimalist weather web app with react, openweather api and tailwind.
               </h2>
               <h1 data-aos="fade-left" className="text-4xl text-left m-5">
                 Weather.app
@@ -165,7 +165,13 @@ const Works = () => {
                 data-aos="fade-left"
                 className="text-lg text-left ml-5 w-[35vw] max-[960px]:w-[auto]"
               >
-                Small art gallery portfolio with some eye catching animations.
+                Small art gallery with some eye catching animations.
+              </h2>
+              <h2
+                data-aos="fade-left"
+                className="text-lg text-left ml-5 w-[35vw] max-[960px]:w-[auto]"
+              >
+                For this I used vite + react, tailwind and styled-components.
               </h2>
               <h1 data-aos="fade-left" className="text-4xl text-left m-5">
                 Art-gallery
@@ -220,6 +226,12 @@ const Works = () => {
                 className="text-lg text-left ml-5 w-[35vw] max-[960px]:w-[auto]"
               >
                 Minimalist and modern ecommerce web page.
+              </h2>
+              <h2
+                data-aos="fade-left"
+                className="text-lg text-left ml-5 w-[35vw] max-[960px]:w-[auto]"
+              >
+                For this I used vite + react, tailwind and styled-components.
               </h2>
               <h1 data-aos="fade-left" className="text-4xl text-left m-5">
                 Essentia
