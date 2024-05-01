@@ -97,7 +97,7 @@ const Contact = () => {
             <Link
               onMouseEnter={hover}
               onMouseLeave={exitHover}              
-              href="https://www.linkedin.com/in/bojorquez-godina-martin-esteban-908609270/"
+              href="https://www.linkedin.com/in/martin-bojorquez-908609270"
               target="_blank"
             >
               <Item>
