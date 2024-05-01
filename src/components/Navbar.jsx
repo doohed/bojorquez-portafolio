@@ -31,7 +31,11 @@ const Item = styled.div`
   height: 24px;
   overflow: hidden;
   font-weight: 600;
+  margin-bottom: 1px;
   cursor: url(cursor.svg) 12 12, auto;
+  @media (max-width: 450px) {
+    margin-bottom: -2vw;
+  }
 `;
 
 const Menu = styled.div`
