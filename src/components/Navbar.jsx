@@ -31,7 +31,11 @@ const Item = styled.div`
   height: 24px;
   overflow: hidden;
   font-weight: 600;
+  margin-bottom: 1px;
   cursor: url(cursor.svg) 12 12, auto;
+  @media (max-width: 450px) {
+    margin-bottom: -2vw;
+  }
 `;
 
 const Menu = styled.div`
@@ -50,15 +54,15 @@ const Menu = styled.div`
   transform: translate(0%, -120%);
   backdrop-filter: invert(0);
   @media (max-width: 960px) {
-    width: 9vw;
-    height: 9vw;
+    width: 5vh;
+    height: 5vh;
   }
 `;
 
 const Options = styled.div`
   background-color: #0c0c0c;
   position: fixed;
-  width: 50vw;
+  width: 30vw;
   height: 98vh;
   top: 4px;
   left: 10px;
@@ -215,7 +219,7 @@ const Navbar = () => {
         </svg>
       </Menu>
       <Options id="options" className="rounded ease-out duration-700">
-        <div className="absolute top-[5vh] text-left p-10 text-white w-[240px] text-[4vw] max-[960px]:text-[10vw]">
+        <div className="absolute top-[5vh] text-left p-10 text-white w-[240px] text-[4vw] max-[960px]:text-[7vh]">
           <div onMouseEnter={hover} onMouseLeave={exitHover}>
             <a href="#home" onClick={menu}>
               <Option>Home</Option>

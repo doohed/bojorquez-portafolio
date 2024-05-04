@@ -8,7 +8,6 @@ const Section = styled.div``;
 
 const Container = styled.div`
   overflow: hidden;
-  height: 60vh;
   width: 90vw;
   margin-left: 4vw;
 `;
@@ -49,23 +48,23 @@ const Contact = () => {
     AOS.init({ duration: 700 });
   }, []);
 
-  function hover () {
-    document.getElementById("cursor").style.backdropFilter= 'invert(0)';
-    document.getElementById("cursor").style.border= '1px solid white';
-    document.getElementById("cursor").style.height= '50px';
-    document.getElementById("cursor").style.width= '50px';
+  function hover() {
+    document.getElementById("cursor").style.backdropFilter = "invert(0)";
+    document.getElementById("cursor").style.border = "1px solid white";
+    document.getElementById("cursor").style.height = "50px";
+    document.getElementById("cursor").style.width = "50px";
   }
 
   function exitHover() {
-    document.getElementById("cursor").style.backdropFilter= 'invert(1)';
-    document.getElementById("cursor").style.border= '0px solid white';
-    document.getElementById("cursor").style.height= '32px'; 
-    document.getElementById("cursor").style.width= '32px';
+    document.getElementById("cursor").style.backdropFilter = "invert(1)";
+    document.getElementById("cursor").style.border = "0px solid white";
+    document.getElementById("cursor").style.height = "32px";
+    document.getElementById("cursor").style.width = "32px";
   }
 
   return (
     <Section id="contact">
-      <Container data-aos="fade">      
+      <Container data-aos="fade">
         <h1
           data-aos="fade-right"
           className="text-9xl text-left m-0 mb-[90px] font-['Open_Sans'] max-[960px]:text-[18vw]"
@@ -90,7 +89,7 @@ const Contact = () => {
             </Link>
             <Link
               onMouseEnter={hover}
-              onMouseLeave={exitHover}              
+              onMouseLeave={exitHover}
               href="https://www.linkedin.com/in/martin-bojorquez-908609270"
               target="_blank"
             >
@@ -101,10 +100,10 @@ const Contact = () => {
                   <span className="text-left">Linkedin</span>
                 </div>
               </Item>
-            </Link>          
+            </Link>
           </List>
         </div>
-        <div className="text-left ml-[-10px]">
+        <div className="text-left ml-[-10px] h-[100px]">
           <Button
             onMouseEnter={hover}
             onMouseLeave={exitHover}
