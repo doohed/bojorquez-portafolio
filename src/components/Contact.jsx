@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Toaster, toast } from 'sonner'
 import { useEffect, useState } from "react";
 
 const Section = styled.div``;
@@ -116,18 +117,14 @@ const Contact = () => {
             onMouseLeave={exitHover}
             className="email"
             onClick={() => {
-              navigator.clipboard.writeText(email);
-              onCopyHandler();
+              navigator.clipboard.writeText(email);              
+              toast('Copied to clipboard!');
             }}
           >
             bojorquezdev@gmail.com
           </Button>
         </div>
-        {isCopied && (
-          <div data-aos="fade-right" className="text-left">
-            Copied to clipboard!
-          </div>
-        )}
+        <Toaster position="bottom-left"/>
       </Container>
     </Section>
   );
