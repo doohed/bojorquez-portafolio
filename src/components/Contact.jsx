@@ -2,7 +2,7 @@ import styled from "styled-components";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Toaster, toast } from 'sonner'
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 const Section = styled.div``;
 
@@ -43,15 +43,8 @@ const Button = styled.button`
 `;
 
 const Contact = () => {
-  const [isCopied, setIsCopied] = useState(false);
   const email = "bojorquezdev@gmail.com";
-
-  const onCopyHandler = () => {
-    setIsCopied(true);
-
-    setTimeout(() => setIsCopied(false), 2500);
-  };
-
+  
   useEffect(() => {
     AOS.init({ duration: 700 });
   }, []);
