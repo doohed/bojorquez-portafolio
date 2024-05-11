@@ -3,13 +3,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const Section = styled.div`
-
-`;
+const Section = styled.div``;
 
 const Container = styled.div`
   overflow: hidden;
-  color: #BFBFB1;
+  color: #bfbfb1;
 `;
 
 const About = () => {
@@ -18,18 +16,25 @@ const About = () => {
   }, []);
 
   return (
-    <Section >
-      <Container  data-aos="fade" data-aos-anchor-placement="top-center" className="bg-black bg-[url('/noise.png')]" >
-        <div id="about"   className=" mt-[20vh] bg-black bg-[url('/noise.png')]">
+    <Section>
+      <Container
+        data-aos="fade"
+        data-aos-anchor-placement="top-center"
+        className="bg-black bg-[url('/noise.png')]"
+      >
+        <div id="about" className=" mt-[20vh] bg-black bg-[url('/noise.png')]">
           <div className="w-[90vw] ml-[4vw]">
-            <div  className="border-b-2 border-gray-700">
-              <h1 
+            <div className="border-b-2 border-gray-700">
+              <h1
                 data-aos="fade-right"
                 className="text-9xl text-left m-0 mb-[90px] font-['Open_Sans'] max-[960px]:text-[20vw]"
               >
                 /ABOUT
               </h1>
-              <h2 data-aos="fade-left" className="text-4xl text-right m-5 max-[960px]:w-[auto]">
+              <h2
+                data-aos="fade-left"
+                className="text-4xl text-right m-5 max-[960px]:w-[auto]"
+              >
                 Based in Mexico with a passion for building digital services
               </h2>
             </div>
@@ -57,7 +62,7 @@ const About = () => {
                 Skills
               </h1>
               <h2 data-aos="fade-left" className="text-4xl text-right m-5">
-                Javascript <span data-aos="fade-left" >•</span>
+                Javascript <span data-aos="fade-left">•</span>
               </h2>
               <h2 data-aos="fade-left" className="text-4xl text-right m-5">
                 Html <span data-aos="fade-left">•</span>
@@ -69,10 +74,7 @@ const About = () => {
                 Tailwind <span data-aos="fade-left">•</span>
               </h2>
               <h2 data-aos="fade-left" className="text-4xl text-right m-5">
-                styledcomponents <span data-aos="fade-left">•</span>
-              </h2>
-              <h2 data-aos="fade-left" className="text-4xl text-right m-5">
-                Vite + React <span data-aos="fade-left" >•</span>
+                Vite + React <span data-aos="fade-left">•</span>
               </h2>
               <h2 data-aos="fade-left" className="text-4xl text-right m-5">
                 React.js <span data-aos="fade-left">•</span>
