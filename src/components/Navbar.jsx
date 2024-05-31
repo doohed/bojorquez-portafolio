@@ -139,7 +139,7 @@ const Navbar = () => {
     <Container className="absolute">
       <List className="inline">
         <Link
-          href="https://drive.google.com/file/d/1JNwcDnRUvSEBxPkEnkjKvTvG6Di1nWCs/view?usp=sharing"
+          href="https://drive.google.com/file/d/1AJAAkHt09eLB9NkHlzw1-xDBhxNi63rC/view?usp=sharing"
           target="_blank"
         >
           <Item onMouseEnter={hover} onMouseLeave={exitHover}>
@@ -251,7 +251,7 @@ const Navbar = () => {
           </div>
           <div onMouseEnter={hover} onMouseLeave={exitHover}>
             <a
-              href="https://drive.google.com/file/d/1JNwcDnRUvSEBxPkEnkjKvTvG6Di1nWCs/view?usp=sharing"
+              href="https://drive.google.com/file/d/1AJAAkHt09eLB9NkHlzw1-xDBhxNi63rC/view?usp=sharing"
               target="_blank"
               onClick={menu}
             >
